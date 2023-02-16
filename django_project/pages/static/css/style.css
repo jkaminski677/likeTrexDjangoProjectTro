@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(87, 87, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: beige;
+}
+a {
+  color: rgb(136, 136, 136);
+  text-decoration: none;
+}
+
+.space1 {
+  width: 100%;
+  height: 30px;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+/* button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+} */
+input {
+  background-color: rgb(53, 53, 53);
+  color: rgb(141, 141, 141);
+  border: none;
+  transition: 0.2s;
+}
+input:hover {
+  background-color: rgb(141, 141, 141);
+  color: rgb(53, 53, 53);
+  transform: scale(1.03);
+}
+#gmae_button {
+  display: block;
+  width: 700px;
+  height: 450px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+#Game_Frame {
+  display: none;
+}
+
+#buttons_under {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.downButtons {
+  width: 350px;
+  height: 130px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+#afterGame {
+  display: none;
+}
+
+.afterGameClass {
+  width: 700px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid peru; */
+}
+
+#downbuttonGoodBay {
+  display: none;
+}
+
+#downbuttonRestart {
+  margin-right: 10px;
+  display: none;
+}

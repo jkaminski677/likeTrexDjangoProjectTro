@@ -1,0 +1,2 @@
+A web application developed for three college subjects. In the app you can play the game "Like T-rex, only different." The repository contains the entire application project and, in addition, the game in python under the "T-rex" directory. The django_project directory contains the entire application. The project was created by Jan Kaminski.
+The application created in the Django framework. In the application you can play the game "Like T-rex, only different." programmed in python, using open source pygame libraries. 

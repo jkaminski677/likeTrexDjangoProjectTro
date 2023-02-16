@@ -1,0 +1,68 @@
+<!-- templates/about.html -->
+{% extends "base.html" %} {% block content %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <title>T-rex Game</title>
+  </head>
+  <body>
+    <div class="space1"></div>
+    <h2>Gra Like T-rex, tylko że inna.</h2>
+    <input
+      type="button"
+      id="gmae_button"
+      value="Zagraj Like T-rex?"
+      onclick="showDiv()"
+    />
+    <div id="Game_Frame">
+      <iframe
+        src="https://v6p9d9t4.ssl.hwcdn.net/html/7362272/index.html"
+        width="700px"
+        height="450px"
+      >
+      </iframe>
+      <div id="buttons_under">
+        <input
+          type="button"
+          class="downButtons"
+          id="downbuttonEnd"
+          value="Zakończ grę :)"
+          onclick="HideDiv()"
+        />
+      </div>
+    </div>
+    <div id="afterGame" class="afterGameClass">
+      <h1>
+        Dziękujemy za wspólną grę. Zapraszamy do skorzystania z podstrosny
+        "Home" w celu zasięgnięcia informacji na temat gry oraz jej producenta.
+        Życzymy miłego zwiedzania stron.
+      </h1>
+    </div>
+    <div id="buttons_under">
+      <a href="{% url 'about' %}"
+        ><input
+          type="button"
+          class="downButtons"
+          id="downbuttonRestart"
+          value="Zagraj jeszcze raz :)"
+      /></a>
+      <a href="{% url 'home' %}"
+        ><input
+          type="button"
+          class="downButtons"
+          id="downbuttonGoodBay"
+          value="Take me home :)"
+      /></a>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
+{% endblock content %}

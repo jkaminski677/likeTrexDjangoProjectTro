@@ -1,0 +1,3 @@
+The game "Like T-rex, only different."  was written by Jan Kaminski in the python programming language. It uses the libraries pygame, random, asyncio, time and pygame.locals, but the latter is used for the restart screen, which is commented out in the code due to malfunctioning code after running the simulation with pygbag. The entire game runs on itch.io at "https://v6p9d9t4.ssl.hwcdn.net/html/7362272/index.html".
+
+Translated with www.DeepL.com/Translator (free version)

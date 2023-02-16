@@ -1,0 +1,39 @@
+<!-- templates/home.html -->
+{% extends "base.html" %} {% block content %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Like T-rex, tylko że inna.</title>
+  </head>
+  <body>
+    <div class="space1"></div>
+    <h2>Homepage</h2>
+    <div class="space1"></div>
+
+    <div class="afterGameClass">
+      <h1>
+        Witam w serwisie internetowym poświęconym grze "Like T-rex, tylko że
+        inna.".
+      </h1>
+      <div class="space1"></div>
+      <h3>
+        Gra została napisana w języku python. W grze wykorzystane zostały
+        biblioteki takie jak pygame, random czy time. Gra została udostępniona
+        jako gra przeglądarkowa dzięki pygbag. Jest to program pakujący, który
+        pozwala na działanie aplikacji napisanych w języku programowania python
+        wykorzystujących pygame w przeglądarkach internetowych.
+      </h3>
+      <div class="space1"></div>
+      <div class="space1"></div>
+      <h3>Zapraszam do zagrania :)</h3>
+      <a href="{% url 'about' %}"
+        ><input type="button" class="downButtons" value="Zagraj :)"
+      /></a>
+    </div>
+  </body>
+</html>
+
+{% endblock content %}
